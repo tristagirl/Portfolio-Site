@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" href=".img/favicon-32x32.ico">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Veranda:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <header class="flexContainer">
+            <img src="/Users/tristadahleen/Desktop/Web Development/Portfolio Site/img/tdlogo.png" class="personallogo flexItem"alt="tdlogo" width="100" height="100"/>
+            <nav class="flexItem">
+                      <ul role="menubar" class=flexContainer>
+                            <li role="presentation" class="flexItem">
+                                <a href="index.html" role="menuitem">Home</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="about.html" role="menuitem">About</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="work.html" role="menuitem">Work</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="contact.html" role="menuitem">Contact</a>
+                            </li>
+                        </ul>
+            </nav>
+        </header>
+    <main>
+        <h4>Want Coding tips? Sign up here:</h4>
+        <div>
+        <form action="post" id="contact-form">
+            <label for="standard-label" for="email">Email:</label>
+            <input type="email" required> 
+
+            <lable for="standard-label" for="Telephone">Telephone:</lable>
+            <input type="tel" required="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> 
+
+            <label for="standard-label" for="Message">Message:</label>
+            <textarea maxlength="160"required></textarea>                      
+            <button type="submit">submit</button>
+          </form>
+        </div>
+        <div>
+            <h4>Location: </h4>
+            Chicago, Illinois USA<br>
+            <br>
+            <h4>Contact:</h4>
+            <a href="tel:+6308629266">630-862-9266</a><br>
+            <a href="mailto:tdahleen@me.com">Contact Me</a>
+        </div>
+    </main>
+    <footer class="footerGrid">
+    <div></div>
+                <a href="https://github.com/tristagirl"><img src="https://i.ibb.co/f4hHZwY/Github.png" alt="Github" width="50px" height="50px" border="0"></a>
+                <a href="https://www.linkedin.com/in/tdahleen/"><img src="https://i.ibb.co/kq4RYbY/linkedin.jpg" alt="linkedin" width="50px" height="50px"border="0"></a>
+    </footer>
+</body>
+    <script src="js/tota11y.min.js"></script>
+</html>
