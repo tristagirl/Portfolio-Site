@@ -12,13 +12,13 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header class="flexContainer">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/gtccRKr/tdlogo.png" alt="tdlogo"></a>
-            <nav class="flexItem">
+        <div class = "root" style="display: grid; grid-template-rows: 20% 80% 20%; grid-gap: 5px">
+            <header class="flexContainer">
+                <a href="#"> <img src="./img/tdlogo.png" style="width: 50px; height: 50px" alt="tdlogo"></a>
+                    <nav class="flexItem">
                       <ul role="menubar" class=flexContainer>
                             <li role="presentation" class="flexItem">
                                 <a href="index.html" role="menuitem">Home</a>
-
                             </li>
                             <li role="presentation" class="flexItem">
                                 <a href="about.html" role="menuitem">About</a>
@@ -31,10 +31,12 @@
                             </li>
                         </ul>
                     </nav>
-        </header>
+            </header>
+        </div>
     <main>
+        <div style="display:grid; grid-template-rows: 1fr; grid-gap: 5px; width: 50%; margin: 50px auto; text-align: center;">
             <h1>About Me:</h1>
-            <div> <p><a href="files/cv.pdf" class="button">Download my Resume</a></p></div>
+            <p><a href="files/cv.pdf" class="button">Download my Resume</a></p>
                     <table>
                         <thead>
                             <tr>
@@ -662,9 +664,11 @@
     </svg>
         <script src="js/tota11y.min.js"></script>
     </main>
-    <footer class="footerGrid">
+      <footer class="footerGrid">
+      <div style="margin: 0px auto; width: 40%">
                   <a href="https://github.com/tristagirl"><img src="./img/github.svg" alt="Github"> </a>
                   <a href="https://www.linkedin.com/in/tdahleen/"><img src="./img/linkedin.svg" alt="linkedin"> </a>
-      </footer>
+      </div>
+    </footer>
 </body>
 </html>

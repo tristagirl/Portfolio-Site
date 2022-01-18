@@ -12,9 +12,10 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header class="flexContainer">
-             <a href="#"><img src="./img/tdlogo.png" alt="tdlogo"></a>
-            <nav class="flexItem">
+        <div class = "root" style="display: grid; grid-template-rows: 20% 80% 20%; grid-gap: 5px">
+            <header class="flexContainer">
+                <a href="#"> <img src="./img/tdlogo.png" style="width: 50px; height: 50px" alt="tdlogo"></a>
+                    <nav class="flexItem">
                       <ul role="menubar" class=flexContainer>
                             <li role="presentation" class="flexItem">
                                 <a href="index.html" role="menuitem">Home</a>
@@ -29,33 +30,41 @@
                                 <a href="contact.html" role="menuitem">Contact</a>
                             </li>
                         </ul>
-            </nav>
+                     </nav>
         </header>
     <main>
-        <h4>Want Coding tips? Sign up here:</h4>
-        <form action="#" method="post" id="contact-form">
+    <form action="#" method="post" id="contact-form" style="display:grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; grid-gap: 5px; width: 40%; margin: 0px auto; text-align: center;">
+          <h4>Want Coding tips? Sign up here:</h4>
+          <div>
           <label class="standard-label" for="contact-email">Email: </label>
           <input type="email" id="contact-email" required>
-
+        </div>
+        <div>
           <label class="standard-label" for="contact-telephone">Telephone: </label>
           <input type="tel" pattern="\d{3}[\-]\d{3}[\-\d{4}]" id="contact-telephone">
-
+        </div>
+        <div>
           <label class="standard-label" for="contact-message">Message: </label>
           <textarea maxlength="240" required id="contact-message"></textarea>
+          </div>
+          <div>
           <input type="submit" value="Send Message">
+          </div>
+        
         </form>
-        <div>
-            <h4>Location: </h4>
-            Chicago, Illinois USA<br>
-            <br>
+        <div class = "root" style="display: grid; grid-gap: 5px">
+            <h4>Location: Chicago, Illinois USA </h4>
             <h4>Contact Trista:</h4>
-            <a href="tel:+6308629266">630-862-9266</a><br>
+            <a href="tel:+6308629266">630-862-9266</a>
             <a href="mailto:tdahleen@me.com">Contact Me</a>
         </div>
     </main>
-    <footer class="footerGrid">
+   <footer class="footerGrid">
+      <div style="margin: 0px auto; width: 40%">
                   <a href="https://github.com/tristagirl"><img src="./img/github.svg" alt="Github"> </a>
                   <a href="https://www.linkedin.com/in/tdahleen/"><img src="./img/linkedin.svg" alt="linkedin"> </a>
+      </div>
       </footer>
+    </div>
 </body>
 </html>
