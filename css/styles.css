@@ -1,17 +1,25 @@
 /*
 Colors used
 
-Text Color (Dark Slate Gray): #2F4F4F;
-Primary Color (Alice Blue): #F0F8FF;
+Text Color (light blue): #d9edff;
+Primary Color (dark Blue): #def0ff;
 Secondary Color (Black): #000000;
+
+$primary-color: #F0F8FF;
+$primary-color-lighter: lighten($primary-color, 50%);
+$primary-color-darker: darken($primary-color, 10%);
+$secondary-color: #000000;
+$text-color-dark: #000;
+$text-color-light: #fff;
+
  */
 
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --background-color:  #2b2b2b;
-  --link-color: #808080;
-  --link-color-visited: #D3D3D3;
+  --primary-color: #def0ff;
+  --secondary-color: #000000;
+  --background-color:  #003461;
+  --link-color: #d9edff;
+  --link-color-visited: #73a5d1;
 }
 a {
   color: var(--primary-color);
@@ -19,7 +27,6 @@ a {
  * {
     box-sizing: border-box;
   }
-
 
 @media all and (max-width: 500px) {
   .grid {
@@ -34,6 +41,7 @@ a {
     font-size: 22px;
   }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     grid-template-columns: 1fr 1fr !important;
@@ -58,51 +66,35 @@ a {
   padding: 10px;
   margin: 10px;
     }
-
 h1 {
   font-size: 22px;
   text-align: center;
   font-weight: 700;
   line-height: 2;
 }
-
 h2 {
     font-size: 22px;
     font-weight: 700;
   }
-  
-  h3 {
+h3 {
     font-size: 18px;
     font-weight: 700;
   }
-
-  h4 {
+h4 {
     font-size: 18px;
     font-weight: 700;
   }
-  
-  h5 {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  ul {
+ul {
       list-style: none;
   }
-
-  a {
+a {
     font-size: 20px;
     font-weight: bold;
     color: var(--primary-color);
-
   }
-
-  a:visited {
-      color: var(--link-color-visited: #D3D3D3);
-  }
-
 a{
   font-size: 18px;
-  color: #2F4F4F;
+  color: #d9edff;
 }
 
 a:hover, a:focus {
@@ -111,24 +103,12 @@ a:hover, a:focus {
 }
 a:visited {
   /* visited link */
-  color: #D3D3D3;
+  color: #73a5d1;
 }
 
-a:active {
-  /* selected link */
-  color: var(--link-color: #808080);
-}
 button:hover, button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-button,
-.button1,
-.button2,
-.button3,
-.my-input{
+  opacity: 80%;
 }
 .button, button {
   /* overwrites browser defaults */
@@ -138,7 +118,7 @@ button,
   /* takes the font from the outer container */
   font-family: inherit;
   /* style button */
-  background-color: #357b70;
+  background-color: #000000;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -147,23 +127,14 @@ button,
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
 td, th{
   padding: 12px;
   margin:  12px;
 }
 .personalLogo{
     height: 50px;
-    width: auto;
+    width: 50px;
+    border: 0px;
 }
 
 .flexContainer {
@@ -185,24 +156,10 @@ li.flexItem {
 }
 
 #personalPhoto {
-    border: 75%;
+    border: 75px;
     float: left;
     width: 150px;
     margin-right: 50px;
-}
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-  50% {
-    fill: #f76414;
-  }
-  100% {
-    fill:  #f76414;
-  }
-}
-.berlin-illustration{
-  fill: black;
 }
 .grid {
   display: grid;
@@ -224,15 +181,7 @@ li.flexItem {
 .gridItem:last-child>h3, .gridItem:last-child>p {
       padding-top: 30px;
   }
-  .footerGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 20px;
-}
+
 
 .sun {
   animation-duration: 4s;
@@ -270,4 +219,32 @@ li.flexItem {
 .cloud-back {
   animation: 30s cloud-move-reverse infinite alternate linear;
 }
+.footerGrid{
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  height: 2px;
+  width: 2px;
+}
+.github {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    height: 2px;
+    width: 2px;
+  }
+.linkedin{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    height: 2px;
+    width: 2px;
+  }
 
+.tdlogo{
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    height: 25px;
+    width: 25px;
+  }

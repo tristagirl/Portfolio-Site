@@ -1,72 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Trista Dahleen </title>
-        <link rel="shortcut icon" href=".img/favicon-32x32.ico" type="image/x-icon"/>
-        <img src="http://via.placeholder.com/200x70" alt="logo" > <!-- add logo -->
-    <head>
-
+        <title>Portfolio</title>
+        <link rel="shortcut icon" href=".img/favicon-32x32.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Veranda:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
     <body>
-
-        <div>
-            <div>
-                <h1>Trista Dahleen</h1>
+        <header class="flexContainer">
+            <a href="#"><img src="./img/tdlogo.svg" alt="tdlogo"></a>
+            <nav class="flexItem">
+                      <ul role="menubar" class=flexContainer>
+                            <li role="presentation" class="flexItem">
+                                <a href="index.html" role="menuitem">Home</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="about.html" role="menuitem">About</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="work.html" role="menuitem">Work</a>
+                            </li>
+                            <li role="presentation" class="flexItem">
+                                <a href="contact.html" role="menuitem">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+        </header>
+    <main>
+         <div class="profile">
+                <img src="./img/IMG_1098.JPG" class="profile_portrait" alt="A photograph of me" id="personalPhoto">
+                <div>
+                    <h1>Hello World!</h1>
+                    <p>My name is Trista Dahleen. I am a <span>web</span> developer from Chicago.</p>
+                    <a href="#">Check out some of my code</a>
+                </div>
             </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="work.html">Work</a>
-                    </li>
-                    <li>
-                    <a href="contact.html">Contact</a>
-                    </li>
-                <ul>
-            </div>
-        </div>
-
-        <br>
-        <br>
-
-        <div>
-            <div>
-                <img src="http://via.placeholder.com/150x150" alt="A photograph of me"><!-- add photo -->
-            
-            </div>
-
-            <br>
-
-            <div>
-                <img src="http://via.placeholder.com/150x150" alt="Lisa Gringl Portrait">
-                <h1>Hello World!</h1>
-                <p>My name is Trista Dahleen. I am a <span>web</span> developer from Chicago.
-                </p>
-                <a href="#">Check out some of my code</a>
-            </div>
-        </div>
-        
-        <div>
-            <div>
-                <p>Find and follow me: </p>
-            </div>
-
-             <br>
-
-            <div>
-                <a href="https://github.com/tristagirl"><img src="https://i.ibb.co/f4hHZwY/Github.png" alt="Github" border="0"></a>
-                <a href="https://www.linkedin.com/in/tdahleen/"><img src="https://i.ibb.co/kq4RYbY/linkedin.jpg" alt="linkedin" border="0"></a>
-            </div>
-
-        </div>
-
-    </body>
-
-
+    </main>
+  <footer class="footerGrid">
+                <a href="https://github.com/tristagirl"><img src="./img/github.svg" alt="Github"> </a>
+                <a href="https://www.linkedin.com/in/tdahleen/"><img src="./img/linkedin.svg" alt="linkedin"> </a>
+    </footer>
+</body>
 </html>
